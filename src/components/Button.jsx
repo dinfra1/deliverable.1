@@ -1,12 +1,12 @@
 import React from 'react'
 import getRandomArray from '../utils/userQuotesRandom';
 import phrases from '../utils/phrases.json'
-const Button = ({ setQuotesRandom, setNumberImg}) => {
+const Button = ({ setQuotesRandom, setNumberImg, img}) => {
 
   const clickVariator = () => {
     
     setQuotesRandom(getRandomArray(phrases));
-    setNumberImg(getRandomArray([1,2,3,4]));
+    setNumberImg(getRandomArray(img));
   }
 
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BoxQuotes = ({ quotesRandom }) => {
+const BoxQuotes = ({ quotesRandom, appStyle}) => {
   return (
-    <p className='App_quotes'>{quotesRandom.phrase}</p>
+    <p className='App_quotes' style={appStyle}>{quotesRandom.phrase}</p>
   )
 }
 
